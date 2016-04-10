@@ -20,18 +20,24 @@ for ($i;$i<$powerof;$i++) {
     $max = $max * $temp;
 }
 
-echo $message;
-
 $z = 0;
 $x = 1;
 $y = 2;
 
+$_html = "";
+$_html .= "<table>";
+$_html .= "<tr><td>Message:</td></tr>";
+$_html .= "<tr><td>" . $message . "</td></tr>"; 
+$_html .= "<tr><td>Sequence:</td></tr>";
 while($z < $max) {
     $z = $x + $y; 
-    echo $z . "<br />"; 
+    $_html .= "<tr><td>" . $z . "</td></tr>"; 
     $x = $y;
     $y = $z;
 }
+$_html .= "</table>";
+
+echo $_html;
 
 ?>
 </head>

@@ -6,6 +6,7 @@ Git-Works é um repositório de estudos de Git orientado pela Code Education.
   - Comitar o arquivo 
   - Fazer um push no repositório remoto git-works no GitHub
   - Implementar Fibonacci em Php
+  - Mostrar sequencia usando table
 
 ### Passos
 
